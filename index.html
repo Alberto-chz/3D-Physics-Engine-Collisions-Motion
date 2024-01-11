@@ -1,0 +1,61 @@
+<!--
+File: index.html
+Project: 3D Rigid Body Physics Engine - Collisions and Motion
+Description: HTML structure for the 3D Rigid Body Physics Engine
+Author: Alberto Chavez Garcia
+Created: June 23, 2023
+Last Modified: August 16, 2023
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D Rigid Body Physics Engine - Collisions and Motion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>3D Rigid Body Physics Engine - Collisions and Motion</h1>
+        <h2>Alberto Chavez Garcia (100996906)</h2>
+        <h2>Supervisor: Dr. Mark Lanthier</h2>
+    </header>
+
+    <main>
+
+        <br>
+        <p>Settings:</p>
+
+        <div class="slider-container">
+            <input type="range" id="piston_output" name="piston_output" min="0" max="10" value="0">
+            <label for="piston_output">Piston Output Force: </label>
+            <span id="piston_output_value"> 0 </span> N
+        </div>
+
+        <div>
+            <input type="range" id="mass" name="mass" min="500" max="1000" value="500">
+            <label for="mass">Mass of Cube Robot: </label>
+            <span id="mass_value"> 500 </span> grams
+        </div>
+
+        <div>
+            <input type="range" id="num_robots" name="num_robots" min="0" max="50" value="0">
+            <label for="num_robots">Number of Robots: </label>
+            <span id="num_robots_value"> 0</span>
+        </div>
+        
+        <br>
+        <button id="refresh_button">Refresh</button>
+
+    </main>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="physics_engine.js"></script>
+    <script src="listeners.js"></script>
+
+</body>
+
+</html>

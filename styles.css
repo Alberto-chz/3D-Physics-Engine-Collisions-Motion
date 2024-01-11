@@ -1,0 +1,34 @@
+/**
+ * File: styless.css
+ * Project: 3D Rigid Body Physics Engine - Collisions and Motion
+ * Description: CSS styling for the 3D Rigid Body Physics Engine web page
+ * Author: Alberto Chavez Garcia
+ * Created: June 23, 2023
+ * Last Modified: August 16, 2023
+ */
+ 
+ body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+    margin: 0;
+    font-family: sans-serif; 
+ }
+
+header, h2 {
+    margin: 0; 
+    text-align: center;
+    font-family: sans-serif; 
+}
+
+p {
+    font-family: sans-serif; 
+}
+
+canvas { 
+    display: block; 
+}
